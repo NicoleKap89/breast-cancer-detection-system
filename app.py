@@ -35,7 +35,6 @@ def index():
                 'name': name,
                 'id': patient_id,
                 'diagnosis': classes[class_idx],
-                'confidence': f"{np.max(pred)*100:.2f}%",
                 'image': filename
             }
             return render_template('result.html', result=result)
