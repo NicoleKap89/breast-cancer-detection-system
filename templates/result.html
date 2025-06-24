@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Results</h1>
+        <p><strong>Patient:</strong> {{ result.name }} ({{ result.id }})</p>
+        <p><strong>Diagnosis:</strong> {{ result.diagnosis }}</p>
+        <p><strong>Confidence:</strong> {{ result.confidence }}</p>
+        <img src="/static/uploads/{{ result.image }}" alt="Uploaded Ultrasound" style="max-width: 300px;">
+        <a href="/">Analyze Another</a>
+    </div>
+</body>
+</html>
